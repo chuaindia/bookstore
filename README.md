@@ -2,10 +2,16 @@
 
 # Bookstore
 
-> You will set up the environment and tools needed to develop a React application.
-> You will develop a React component that will hold the core functionality: a bookstore app.
-> Add React Router and set two <Route>s and <Link>s for the app's navigation
+## In this project following processes will be achieved :
 
+- Initialise React app.
+- The building blocks of the app should be set as re-usable components. Create a directory for the components.
+- Add React Router and set two <Route>s and <Link>s for the app's navigation.
+- Books - the default view: Should display the list of books (empty at this point but it should be ready for the data) with the Remove button (no funcionality yet).
+- Create a component called Book for displaying a single book (receive a title and an author as prop) and reuse it in a component that displays a list of books.
+- Should display a form for adding a book (no functionality yet).
+- Create a separate component for this form (with inputs for a title and an author).
+- Categories: Should display a button "Check status" only.
 
 ## Built With
 
@@ -16,23 +22,19 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://iptysam.github.io/bookstore-app/)
-
-
 ## Getting Started
 
-- git clone git@github.com:Iptysam/bookstore-app.git
-- cd bookstore-app
+- clone git@github.com:chuaindia/bookstore.git
+- cd bookstore
 - npm start
 
 ### Prerequisites
 - Html & CSS basics
 - Git & github
-- SSH key for github linked to git on local environment
 
 ### Setup
 - Click on the green button on the top right corner with the text code
-- Click on SSH
+- Click on https
 - Copy the text that appears below 
 - Type "git clone" in your terminal and past the copied text next to "git clone" and press enter
 
@@ -50,10 +52,10 @@
 
 ## Authors
 
-👤 **Author1**
+👤 **Tanusri Ghosh**
 
-- GitHub: [@Iptysam](https://github.com/Iptysam)
-- LinkedIn: [iptisammukadam](https://linkedin.com/in/iptisam-mukadam-4b2b39239)
+- GitHub: https://github.com/chuaindia
+- LinkedIn: https://linkedin.com/in/tanusri-ghosh-2a56b814
 
 
 
@@ -71,7 +73,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Inspiration
-- etc
+
 
 ## 📝 License
 
