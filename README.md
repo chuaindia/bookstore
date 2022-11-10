@@ -2,16 +2,16 @@
 
 # Bookstore
 
->> In this project following processes will be achieved :
+## In this project following processes will be achieved :
 
-> Initialise React app.
-> The building blocks of the app should be set as re-usable components. Create a directory for the components.
-> Add React Router and set two <Route>s and <Link>s for the app's navigation.
-> Books - the default view: Should display the list of books (empty at this point but it should be ready for the data) with the Remove button (no funcionality yet).
-> Create a component called Book for displaying a single book (receive a title and an author as prop) and reuse it in a component that displays a list of books.
-> Should display a form for adding a book (no functionality yet).
-> Create a separate component for this form (with inputs for a title and an author).
-> Categories: Should display a button "Check status" only.
+- Initialise React app.
+- The building blocks of the app should be set as re-usable components. Create a directory for the components.
+- Add React Router and set two <Route>s and <Link>s for the app's navigation.
+- Books - the default view: Should display the list of books (empty at this point but it should be ready for the data) with the Remove button (no funcionality yet).
+- Create a component called Book for displaying a single book (receive a title and an author as prop) and reuse it in a component that displays a list of books.
+- Should display a form for adding a book (no functionality yet).
+- Create a separate component for this form (with inputs for a title and an author).
+- Categories: Should display a button "Check status" only.
 
 ## Built With
 
