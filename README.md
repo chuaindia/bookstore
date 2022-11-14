@@ -1,17 +1,17 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore
+# Bookstore ---- Reducers and Action
 
 ## In this project following processes will be achieved :
 
-- Initialise React app.
-- The building blocks of the app should be set as re-usable components. Create a directory for the components.
-- Add React Router and set two <Route>s and <Link>s for the app's navigation.
-- Books - the default view: Should display the list of books (empty at this point but it should be ready for the data) with the Remove button (no funcionality yet).
-- Create a component called Book for displaying a single book (receive a title and an author as prop) and reuse it in a component that displays a list of books.
-- Should display a form for adding a book (no functionality yet).
-- Create a separate component for this form (with inputs for a title and an author).
-- Categories: Should display a button "Check status" only.
+- Action types for adding and removing a book is defined.
+- The initial state to be an empty array of books and categories is set.
+- Export Action Creators for actions is created.
+- Reducer is written and exported as default.
+- State changes for the actions created are written.
+- Categories actions and reducer is written using the ducks pattern.
+- Configuration of the Redux Store is made.
+- The necessary methods are imported from Redux Toolkit.
 
 ## Built With
 
