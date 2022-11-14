@@ -64,7 +64,7 @@ const delBookAPI = async (id) => {
   await data.text();
 };
 
-export const delBook = (id) => (async (dispatch) => {
+export const deleteBook = (id) => (async (dispatch) => {
   await delBookAPI(id);
   dispatch({
     type: DELETEBOOK,
