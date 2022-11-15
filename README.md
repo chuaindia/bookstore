@@ -1,23 +1,25 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore ---- Reducers and Action
+# Bookstore: Use Redux in React components.
 
 ## In this project following processes will be achieved :
 
-- Action types for adding and removing a book is defined.
-- The initial state to be an empty array of books and categories is set.
-- Export Action Creators for actions is created.
-- Reducer is written and exported as default.
-- State changes for the actions created are written.
-- Categories actions and reducer is written using the ducks pattern.
-- Configuration of the Redux Store is made.
-- The necessary methods are imported from Redux Toolkit.
+- The default state in the books reducer from an empty array to an array with a few books is done. They are displayed in the React components.
+- Redux Provider and the store in the main component of the React appi is imported.
+- The app is connected to the Redux store.
+- The list of books displays books from Redux store.
+- All the functionalities in the react component are done for adding and removing books.
+- The inputs from the state are taken and a unique id is generated and added to an object.
+- Redux useDispatch is imported.
+- The "categories" page  is shown as "under construction".
+
 
 ## Built With
 
 - HTML/CSS
 - Javascript
 - React
+- Redux
 - Visual studio code
 
 ## Live Demo (if available)
