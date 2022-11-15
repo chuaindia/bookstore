@@ -4,14 +4,11 @@
 
 ## In this project following processes will be achieved :
 
-- "fetch" is used with  
-  "createAsyncThunk".
-- Book list is fetched from 
-  Bookstore API on Books page load.
+- "fetch" is used with "createAsyncThunk".
+- Book list is fetched from Bookstore API on Books page load.
 - The action creators are added.
 - "Add Book" and "Remove Book" are refactored .
-- Action is dispatched so that it will update the states 
-  accrdingly.
+- Action is dispatched so that it will update the states accrdingly.
 - "Add Book" and "Remove Book" should work in the same way after the refactor.
 
 
@@ -82,4 +79,3 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./LICENSE.MD) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
