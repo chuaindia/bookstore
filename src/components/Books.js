@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getBook } from '../redux/books/books';
+import { addNewBook } from '../redux/books/books';
 import Book from './Book';
 import Form from './Form';
 
@@ -9,7 +9,7 @@ const Books = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getBook());
+    dispatch(addNewBook());
   }, [dispatch]);
 
   return (

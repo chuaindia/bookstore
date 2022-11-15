@@ -1,14 +1,17 @@
-import { combineReducers } from 'redux';
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import BookReducer from './books/books';
-import categoryReducer from './categories/categories';
+import categoriesReducer from './categories/categories';
+import booksReducer from './books/books';
 
-const rootReducer = combineReducers({
-  books: BookReducer,
-  category: categoryReducer,
-});
-
-const reduxstore = configureStore({ reducer: rootReducer, middleware: [thunk] });
-
-export default reduxstore;
+const rootReducer = configureStore({
+  reducer: {
+    booksReducer,
+    categoriesReducer,
+  },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+    serializableCheck: {
+      ignoreActions: ['FETCH_BOOK', 'ADD_BOOK', 'REMOVE_BOOK'],
+    },
+  }),
+}, applyMiddleware(thunk));
+export default rootReducer;

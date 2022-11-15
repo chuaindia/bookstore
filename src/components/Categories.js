@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { CheckStatus } from '../redux/categories/categories';
+import { addCategories } from '../redux/categories/categories';
 
 const Categories = () => {
   const dispatch = useDispatch();
@@ -8,7 +8,7 @@ const Categories = () => {
   return (
     <>
       <h1>{categories}</h1>
-      <button className="Check-Status" type="button" onClick={() => dispatch(CheckStatus())}> </button>
+      <button className="Check-Status" type="button" onClick={() => dispatch(addCategories())}> </button>
     </>
   );
 };
