@@ -1,19 +1,36 @@
-const CHECKSTATUS = 'bookstore-app/categories/CHECKSTATUS';
+// Action Type
+const ADD_CATEGORY = 'ADD_CATEGORY';
+const REMOVE_CATEGORY = 'REMOVE_CATEGORY';
 
-const initialState = '';
+// Default state
+const initialState = [];
 
-export const CheckStatus = () => ({
-  type: CHECKSTATUS,
-  category: 'Under Construction',
+// Action Creators
+export const addCategories = (category) => ({
+  type: ADD_CATEGORY,
+  category,
 });
 
-const categoryReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case CHECKSTATUS:
-      return action.category;
+export const removeCategories = (category) => ({
+  type: REMOVE_CATEGORY,
+  category,
+});
 
-    default: return state;
+// Reducer
+
+const categoriesReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case ADD_CATEGORY:
+      return [...state, action.payload];
+    case REMOVE_CATEGORY:
+      return [...state.filter((each) => each.id !== action.payload.id)];
+    default:
+      return [
+        {
+          text: 'Under construction',
+        },
+      ];
   }
 };
 
-export default categoryReducer;
+export default categoriesReducer;

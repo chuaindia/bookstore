@@ -1,17 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore: Use Redux in React components.
+# Bookstore: Connected to API using Redux.
 
 ## In this project following processes will be achieved :
 
-- The default state in the books reducer from an empty array to an array with a few books is done. They are displayed in the React components.
-- Redux Provider and the store in the main component of the React appi is imported.
-- The app is connected to the Redux store.
-- The list of books displays books from Redux store.
-- All the functionalities in the react component are done for adding and removing books.
-- The inputs from the state are taken and a unique id is generated and added to an object.
-- Redux useDispatch is imported.
-- The "categories" page  is shown as "under construction".
+- "fetch" is used with "createAsyncThunk".
+- Book list is fetched from Bookstore API on Books page load.
+- The action creators are added.
+- "Add Book" and "Remove Book" are refactored .
+- Action is dispatched so that it will update the states accrdingly.
+- "Add Book" and "Remove Book" should work in the same way after the refactor.
 
 
 ## Built With
@@ -81,4 +79,3 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./LICENSE.MD) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
