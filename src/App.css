@@ -76,7 +76,7 @@ body {
 .Title {
   width: 12.313rem;
   height: 1.813rem;
-  font-family: Roboto Slab, sans-serif;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -91,7 +91,7 @@ button {
   border: none;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: Roboto Slab, sans-serif;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -105,7 +105,7 @@ button {
   width: 6.688rem;
   height: 1.188rem;
   margin-top: -20px;
-  font-family: Roboto Slab, sans-serif;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -186,7 +186,7 @@ button {
   height: 1.125rem;
   margin: 0.063rem 0 0 0;
   opacity: 0.5;
-  font-family: Roboto Slab, sans-serif;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -199,7 +199,7 @@ button {
 .ChapterNo {
   width: 4.688rem;
   height: 1.313rem;
-  font-family: Roboto Slab, sans-serif;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -277,6 +277,19 @@ input[type='text'] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.Add-Book {
+  width: 8.938rem;
+  height: 1.125rem;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
 }
 
 .BookForm {
