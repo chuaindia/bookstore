@@ -32,11 +32,24 @@ const Form = () => {
   };
 
   return (
-    <form className="BookForm" onSubmit={handleAddBook}>
-      <input onChange={handleChangeTitle} type="text" placeholder="Book Title" value={title} />
-      <input onChange={handleChangeAuthor} type="text" placeholder="Author" value={author} />
-      <button type="submit">Add Book</button>
-    </form>
+    <div className="AddBook">
+      <h2 className="AddBookTitle">Add New Book</h2>
+      <form className="BookForm" onSubmit={handleAddBook}>
+        <input onChange={handleChangeTitle} type="text" placeholder="Book Title" value={title} className="BookTitle" />
+        <input onChange={handleChangeAuthor} type="text" placeholder="Author" value={author} className="BookAuthor" />
+        <select name="category" className="CategoryList">
+          <option value="" defaultValue>Category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-Fiction">Non-Fiction</option>
+          <option value="Drama">Drama</option>
+          <option value="Romance">Romance</option>
+          <option value="History">History</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Thriller">Thriller</option>
+        </select>
+        <button type="submit" className="Add-Book">Add Book</button>
+      </form>
+    </div>
   );
 };
 
