@@ -8,7 +8,7 @@ const Book = (props) => {
   const { id, title, author } = props;
   const dispatch = useDispatch();
 
-  const handledBook = (id) => {
+  const handleBook = (id) => {
     dispatch(deleteBook(id));
     dispatch(getBook());
   };
@@ -17,23 +17,38 @@ const Book = (props) => {
     <div className="Books-Detail">
       <div className="Book-Detail">
         <div className="Book-Title">
-          <h2>{title}</h2>
-          <p>{author}</p>
-          <button type="button">Comments</button>
-          <button onClick={() => (handledBook(id))} type="submit">Remove</button>
-          <button type="button">Edit</button>
+          <p className="Category">Fiction</p>
+          <h2 className="Title">{title}</h2>
+          <p className="Author">{author}</p>
+          <div className="Buttons">
+            <button type="button" className="Comments">Comments</button>
+            <div className="Line2" />
+            <button onClick={() => (handleBook(id))} type="submit" className="Remove">Remove</button>
+            <div className="Line2" />
+            <button type="button">Edit</button>
+          </div>
         </div>
-        <div className="Book-Reading-Detail">
-          <h2>64%</h2>
-          <p>Completed</p>
+        <div className="Circular">
+          <div className="Spin" />
+          <div>
+            <h2>
+              {Math.floor(Math.random() * 100)}
+              %
+            </h2>
+            <p>Completed</p>
+          </div>
+          <div className="Line3" />
         </div>
-        <div>
-          <p>CURRENT CHAPTER</p>
-          <p>Chapter 17</p>
-          <button type="button">UPDATE PROGRESS</button>
+        <div className="Chapters">
+          <p className="Current">CURRENT CHAPTER</p>
+          <p className="ChapterNo">Chapter 17</p>
+          <div className="Rectangle">
+            <button type="button">UPDATE PROGRESS</button>
+          </div>
         </div>
       </div>
     </div>
+
   );
 };
 

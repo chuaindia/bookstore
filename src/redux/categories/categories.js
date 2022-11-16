@@ -1,4 +1,4 @@
-const CHECKSTATUS = 'bookstore-app/categories/CHECKSTATUS';
+const CHECKSTATUS = 'bookstore/categories/CHECKSTATUS';
 
 const initialState = '';
 

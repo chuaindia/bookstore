@@ -1,17 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore: Use Redux in React components.
+# Bookstore Styling
 
-## In this project following processes will be achieved :
-
-- The default state in the books reducer from an empty array to an array with a few books is done. They are displayed in the React components.
-- Redux Provider and the store in the main component of the React appi is imported.
-- The app is connected to the Redux store.
-- The list of books displays books from Redux store.
-- All the functionalities in the react component are done for adding and removing books.
-- The inputs from the state are taken and a unique id is generated and added to an object.
-- Redux useDispatch is imported.
-- The "categories" page  is shown as "under construction".
+## In this project styling is done for  the bookstore. ZEPLIN is used as a tool.
 
 
 ## Built With
