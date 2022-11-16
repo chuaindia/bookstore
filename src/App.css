@@ -7,15 +7,14 @@ body {
 
 .Books-Detail {
   width: 100rem;
-  height: 89.625rem;
-  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
+  height: auto;
   background-color: var(--pale-grey);
 }
 
 .Book-Detail {
   display: flex;
-  justify-content: space-around;
-  width: 75rem;
+  justify-content: space-between;
+  width: 95%;
   height: 10.625rem;
   margin: 2.313rem 6.25rem 0;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
@@ -27,7 +26,7 @@ body {
 .NavigationBarLogo {
   width: 15rem;
   height: 2.313rem;
-  margin: 0.375rem 2.938rem 0.125rem 0;
+  margin-left: -75px;
   font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
@@ -49,9 +48,12 @@ body {
 .Panel {
   font-size: 1.5rem;
   position: absolute;
-  left: 90.9%;
+  left: 114%;
   background: none;
   color: rgb(0, 174, 255);
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  padding: 0.875rem;
 }
 
 .Book-Title {
@@ -74,7 +76,7 @@ body {
 }
 
 .Title {
-  width: 12.313rem;
+  width: 14.313rem;
   height: 1.813rem;
   font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
@@ -129,7 +131,8 @@ button {
 .Circular {
   display: flex;
   position: relative;
-  right: 20%;
+  right: 10%;
+  left: 3%;
   gap: 1.313rem;
   flex-grow: 1;
 }
@@ -182,7 +185,9 @@ button {
 }
 
 .Current {
-  width: 7.875rem;
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
   height: 1.125rem;
   margin: 0.063rem 0 0 0;
   opacity: 0.5;
@@ -197,7 +202,7 @@ button {
 }
 
 .ChapterNo {
-  width: 4.688rem;
+  width: 20rem;
   height: 1.313rem;
   font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
@@ -243,7 +248,7 @@ button {
 input[type='text'] {
   width: 10rem;
   height: 2rem;
-  margin-left: 30px;
+  margin-right: 30px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
@@ -262,12 +267,13 @@ input[type='text'] {
   border-radius: 4px;
   border: 1px solid #e8e8e8;
   padding: 0.375rem 0.938rem 0.563rem 1rem;
-  margin: 1.188rem 2.125rem 0;
+  margin: 1.188rem 5.3rem 0 5.3rem;
   background-color: #fff;
 }
 
 .AddBook button {
-  width: 14rem;
+  width: 20rem;
+  margin-right: 0;
   height: 2rem;
   padding: 0;
   font-size: 0.8rem;

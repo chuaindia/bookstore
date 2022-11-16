@@ -30,7 +30,7 @@ const Book = (props) => {
         </div>
         <div className="Circular">
           <div className="Spin" />
-          <div>
+          <div className="percentage">
             <h2>
               {Math.floor(Math.random() * 100)}
               %

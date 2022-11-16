@@ -17,7 +17,6 @@ const Navbar = () => (
       </NavMenu>
       <NavMenu>
         <NavLink>
-          <div className="LogoBorder" />
           <div className="Panel">
             <ImUser />
           </div>
